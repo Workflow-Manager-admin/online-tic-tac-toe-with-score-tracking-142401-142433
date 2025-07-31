@@ -1,0 +1,19 @@
+.game-container {
+  max-width: 480px;
+  margin: 40px auto;
+  background: #f9fafe;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #cfe2ff;
+  text-align: center;
+}
+.result-announcement {
+  margin: 16px 0 20px 0;
+}
+.leaderboard-link {
+  color: #1976d2;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 24px;
+  display: inline-block;
+}

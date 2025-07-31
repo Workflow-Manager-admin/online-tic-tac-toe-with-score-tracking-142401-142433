@@ -1,0 +1,15 @@
+<div class="auth-container">
+  <h2>Login</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <label for="username">Username</label>
+    <input id="username" formControlName="username" type="text" />
+    <label for="password">Password</label>
+    <input id="password" formControlName="password" type="password" />
+    <button type="submit" [disabled]="loading || loginForm.invalid">Login</button>
+  </form>
+  <div *ngIf="errorMsg" class="error">{{ errorMsg }}</div>
+  <div>
+    <span>Don't have an account?</span>
+    <a routerLink="/register">Register</a>
+  </div>
+</div>

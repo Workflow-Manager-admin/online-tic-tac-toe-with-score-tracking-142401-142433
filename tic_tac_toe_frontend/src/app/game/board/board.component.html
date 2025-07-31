@@ -1,0 +1,8 @@
+<div class="board">
+  <div 
+    class="cell" 
+    *ngFor="let cell of board; index as i" 
+    (click)="cellClick(i)">
+    {{ cell }}
+  </div>
+</div>

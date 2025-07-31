@@ -1,0 +1,10 @@
+<div class="game-container">
+  <h2>Tic Tac Toe</h2>
+  <button (click)="startGame()" *ngIf="!newGameStarted">Start New Game</button>
+  <app-board *ngIf="newGameStarted" (gameEnd)="handleGameEnd($event)"></app-board>
+  <div *ngIf="winner || draw" class="result-announcement">
+    <app-announcement [winner]="winner" [draw]="draw"></app-announcement>
+    <button (click)="startGame()">Play Again</button>
+  </div>
+  <a routerLink="/leaderboard" class="leaderboard-link">View Leaderboard</a>
+</div>
